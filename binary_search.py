@@ -1,23 +1,36 @@
+"""
+This module contains the implementation of binary search algorithm.
+"""
+
 n = int(input("Enter the number of elements: "))
-a = []
+arr = []
 for i in range(n):
-        a.append(int(input(f"Enter the element number {i}: ")))
-key = int(input("Enter the key to search: "))
+    arr.append(int(input(f"Enter the element number {i}: ")))
+ele = int(input("Enter the key to search: "))
 
 def binary_search(a, key):
+    """
+    This function implements the binary search algorithm.
+    Args:
+        a: List of integers.
+        key: Integer to search in the list.
+    
+    Returns:
+        Index of the key in the list if found, otherwise -1.
+    """
     low = 0
     high = len(a) - 1
     while low <= high:
         mid = (low + high) // 2
         if a[mid] == key:
-                return mid
-        elif a[mid] < key:
-                low = mid + 1
+            return mid
+        if a[mid] < key:
+            low = mid + 1
         else:
-                high = mid - 1
+            high = mid - 1
     return -1
 
-print(f"Index: {binary_search(a, key)}")
+print(f"Index: {binary_search(arr, ele)}")
 
 if __name__ == "__main__":
     print("Running Test Cases...")
