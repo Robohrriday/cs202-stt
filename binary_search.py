@@ -20,7 +20,7 @@ def binary_search(a, key):
 print(f"Index: {binary_search(a, key)}")
 
 if __name__ == "__main__":
-    # Some Test Cases
+    print("Running Test Cases...")
     assert binary_search([1, 2, 3, 4, 5], 3) == 2
     assert binary_search([1, 2, 3, 4, 5], 5) == 4
     assert binary_search([1, 2, 3, 4, 5], 1) == 0
