@@ -17,4 +17,14 @@ def binary_search(a, key):
             high = mid - 1
     return -1
 
-print(binary_search(a, key))
+print(f"Index: {binary_search(a, key)}")
+
+if __name__ == "__main__":
+    # Some Test Cases
+    assert binary_search([1, 2, 3, 4, 5], 3) == 2
+    assert binary_search([1, 2, 3, 4, 5], 5) == 4
+    assert binary_search([1, 2, 3, 4, 5], 1) == 0
+    assert binary_search([1, 2, 3, 4, 5], 6) == -1
+    assert binary_search([1, 2, 3, 4, 5], 0) == -1
+    assert binary_search([1, 2, 3, 4, 5], 2) == 1
+    assert binary_search([1, 2, 3, 4, 5], 4) == 3
