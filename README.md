@@ -2,7 +2,7 @@
 
 ### Lab 3: Exploration of different diff algorithms on Open-Source Repositories
 
-Repository Chosen: [openai/whisper](https://github.com/openai/whisper)
+Repository used: [openai/whisper](https://github.com/openai/whisper)
 
 To run the process, modify the `projects.csv` as demonstrated by the example and  execute the following command
 
