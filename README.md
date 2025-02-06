@@ -2,7 +2,7 @@
 
 ### Lab 3: Exploration of different diff algorithms on Open-Source Repositories
 
-Repository used: [openai/whisper](https://github.com/openai/whisper)
+Repository used: [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)
 
 To run the process, modify the `projects.csv` as demonstrated by the example and  execute the following command
 
