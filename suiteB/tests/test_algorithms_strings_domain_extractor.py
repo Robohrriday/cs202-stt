@@ -2,40 +2,29 @@
 # Please check them before you use them.
 import pytest
 import algorithms.strings as module_0
-import builtins as module_1
 
 
+@pytest.mark.xfail(strict=True)
 def test_case_0():
-    str_0 = "f;8NIL$3L)(7.=\na#w$;"
+    str_0 = '"\nCreate a function that will validate if given parameters are valid geographical coordinates.\nValid coordinates look like the following: "23.32353342, -32.543534534". The return value should be either true or false.\nLatitude (which is first float) can be between 0 and 90, positive or negative. Longitude (which is second float) can be between 0 and 180, positive or negative.\nCoordinates can only contain digits, or one of the following symbols (including space after comma) -, .\nThere should be no space between the minus "-" sign and the digit after it.\n\nHere are some valid coordinates:\n-23, 25\n43.91343345, 143\n4, -3\n\nAnd some invalid ones:\n23.234, - 23.4234\nN23.43345, E32.6457\n6.325624, 43.34345.345\n0, 1,2\n\n'
     var_0 = module_0.domain_name_1(str_0)
-    assert var_0 == "f;8NIL$3L)(7"
-    var_1 = module_0.domain_name_1(var_0)
-    assert var_1 == "f;8NIL$3L)(7"
+    assert var_0 == '\nValid coordinates look like the following: "23'
+    none_type_0 = None
+    module_0.domain_name_1(none_type_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_1():
-    tuple_0 = ()
-    module_0.domain_name_2(tuple_0)
+    str_0 = "Stack is empty"
+    var_0 = module_0.domain_name_2(str_0)
+    assert var_0 == "Stack is empty"
+    var_1 = module_0.domain_name_1(var_0)
+    assert var_1 == "Stack is empty"
+    bytes_0 = b"8\xc9/="
+    module_0.domain_name_1(bytes_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_2():
-    str_0 = '\nImplement regular expression matching with support for \'.\' and \'*\'.\n\n\'.\' Matches any single character.\n\'*\' Matches zero or more of the preceding element.\n\nThe matching should cover the entire input string (not partial).\n\nThe function prototype should be:\nbool is_match(const char *s, const char *p)\n\nSome examples:\nis_match("aa","a") → false\nis_match("aa","aa") → true\nis_match("aaa","aa") → false\nis_match("aa", "a*") → true\nis_match("aa", ".*") → true\nis_match("ab", ".*") → true\nis_match("aab", "c*a*b") → true\n'
-    var_0 = module_0.domain_name_2(str_0)
-    assert var_0 == "\nImplement regular expression matching with support for '"
-    var_1 = module_0.domain_name_1(str_0)
-    assert var_1 == "' and '*'"
-    var_2 = module_0.domain_name_1(var_0)
-    assert var_2 == "\nImplement regular expression matching with support for '"
-    var_3 = module_0.domain_name_2(var_2)
-    assert var_3 == "\nImplement regular expression matching with support for '"
-    var_4 = module_0.domain_name_1(var_3)
-    assert var_4 == "\nImplement regular expression matching with support for '"
-    var_5 = module_0.domain_name_2(var_3)
-    assert var_5 == "\nImplement regular expression matching with support for '"
-    var_6 = module_1.object()
-    str_1 = "VIII"
-    var_7 = module_0.domain_name_1(str_1)
-    var_8 = module_1.object()
-    module_0.domain_name_2(var_8)
+    float_0 = 3798.0
+    module_0.domain_name_2(float_0)

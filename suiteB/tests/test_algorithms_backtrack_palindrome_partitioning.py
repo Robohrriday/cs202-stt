@@ -7,71 +7,85 @@ import builtins as module_1
 
 @pytest.mark.xfail(strict=True)
 def test_case_0():
-    float_0 = 3.0
-    module_0.palindromic_substrings(float_0)
+    complex_0 = 2j
+    module_0.palindromic_substrings(complex_0)
 
 
 def test_case_1():
-    bool_0 = True
-    none_type_0 = None
-    var_0 = module_0.palindromic_substrings(none_type_0)
-    var_1 = module_0.palindromic_substrings_iter(bool_0)
+    dict_0 = {}
+    var_0 = module_0.palindromic_substrings(dict_0)
+    int_0 = -1845
+    var_1 = module_0.palindromic_substrings_iter(var_0)
+    var_2 = module_0.palindromic_substrings_iter(int_0)
 
 
+@pytest.mark.xfail(strict=True)
 def test_case_2():
     none_type_0 = None
-    var_0 = module_0.palindromic_substrings_iter(none_type_0)
-    var_1 = module_0.palindromic_substrings(none_type_0)
-    var_2 = module_0.palindromic_substrings_iter(none_type_0)
-    var_3 = module_0.palindromic_substrings(none_type_0)
-    var_4 = module_0.palindromic_substrings(var_3)
+    dict_0 = {
+        none_type_0: none_type_0,
+        none_type_0: none_type_0,
+        none_type_0: none_type_0,
+        none_type_0: none_type_0,
+    }
+    module_0.palindromic_substrings(dict_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_3():
-    str_0 = "SRr\t)kC"
-    var_0 = module_0.palindromic_substrings(str_0)
-    none_type_0 = None
-    var_1 = module_0.palindromic_substrings_iter(none_type_0)
-    int_0 = 2704
-    var_2 = module_0.palindromic_substrings_iter(int_0)
-    module_0.palindromic_substrings(int_0)
+    complex_0 = -3909.15 + 1229.18421j
+    object_0 = module_1.object()
+    dict_0 = {object_0: complex_0, object_0: object_0, complex_0: object_0}
+    tuple_0 = (complex_0, dict_0)
+    var_0 = module_0.palindromic_substrings(tuple_0)
+    object_1 = module_1.object()
+    module_0.palindromic_substrings(object_1)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_4():
+    bool_0 = True
     none_type_0 = None
     var_0 = module_0.palindromic_substrings_iter(none_type_0)
-    module_1.object(*var_0)
+    var_1 = module_0.palindromic_substrings_iter(bool_0)
+    float_0 = -1302.6484
+    var_2 = module_0.palindromic_substrings_iter(none_type_0)
+    dict_0 = {float_0: bool_0, var_1: var_1, var_1: bool_0}
+    str_0 = "J5BgT@A0}e(VK(2D\x0b#@"
+    tuple_0 = (dict_0, bool_0, str_0)
+    var_3 = module_0.palindromic_substrings(tuple_0)
+    var_4 = module_0.palindromic_substrings_iter(bool_0)
+    var_5 = module_0.palindromic_substrings_iter(bool_0)
+    module_1.object(*var_5)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_5():
+    none_type_0 = None
+    var_0 = module_0.palindromic_substrings_iter(none_type_0)
     bool_0 = False
-    float_0 = -904.7640188642197
-    var_0 = module_0.palindromic_substrings_iter(bool_0)
-    var_1 = module_0.palindromic_substrings_iter(float_0)
+    var_1 = module_0.palindromic_substrings_iter(bool_0)
+    list_0 = [bool_0]
+    var_2 = module_0.palindromic_substrings_iter(none_type_0)
+    var_3 = module_0.palindromic_substrings(list_0)
+    var_4 = module_0.palindromic_substrings_iter(var_2)
     module_1.object(*var_1)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_6():
-    bool_0 = False
-    var_0 = module_0.palindromic_substrings(bool_0)
-    var_1 = module_0.palindromic_substrings_iter(var_0)
-    var_2 = module_0.palindromic_substrings_iter(bool_0)
-    module_1.object(*var_1)
-
-
-@pytest.mark.xfail(strict=True)
-def test_case_7():
-    str_0 = '"@+X'
-    var_0 = module_0.palindromic_substrings(str_0)
+    dict_0 = {}
+    bool_0 = True
+    var_0 = module_0.palindromic_substrings(dict_0)
+    tuple_0 = (dict_0, dict_0, bool_0, bool_0)
+    var_1 = module_0.palindromic_substrings(tuple_0)
+    var_2 = module_0.palindromic_substrings(var_1)
     none_type_0 = None
-    bool_0 = False
-    var_1 = module_0.palindromic_substrings_iter(str_0)
-    var_2 = module_0.palindromic_substrings_iter(str_0)
-    var_3 = module_0.palindromic_substrings(bool_0)
-    var_4 = module_0.palindromic_substrings(none_type_0)
-    var_5 = module_0.palindromic_substrings(bool_0)
-    module_1.object(*var_2)
+    var_3 = module_0.palindromic_substrings_iter(var_1)
+    var_4 = module_0.palindromic_substrings_iter(var_1)
+    bool_1 = False
+    list_0 = [bool_1]
+    var_5 = module_0.palindromic_substrings_iter(none_type_0)
+    var_6 = module_0.palindromic_substrings(list_0)
+    var_7 = module_0.palindromic_substrings_iter(var_5)
+    module_1.object(*var_3)

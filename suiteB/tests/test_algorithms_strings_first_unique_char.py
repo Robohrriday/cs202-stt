@@ -4,45 +4,49 @@ import pytest
 import algorithms.strings as module_0
 
 
-@pytest.mark.xfail(strict=True)
 def test_case_0():
-    bool_0 = False
-    set_0 = {bool_0}
-    var_0 = module_0.first_unique_char(set_0)
+    str_0 = "\\\\DzGX;EFpc{*0"
+    list_0 = [str_0]
+    var_0 = module_0.first_unique_char(list_0)
     assert var_0 == 0
-    list_0 = [set_0, bool_0, set_0, set_0]
-    var_1 = module_0.first_unique_char(list_0)
-    assert var_1 == 1
-    none_type_0 = None
-    module_0.first_unique_char(none_type_0)
 
 
 def test_case_1():
-    bytes_0 = b"\xfce]\x05gI\xf4\x99|\xf1\x1a0O\xf4"
-    var_0 = module_0.first_unique_char(bytes_0)
-    assert var_0 == 0
+    set_0 = set()
+    var_0 = module_0.first_unique_char(set_0)
+    assert var_0 == -1
+    var_1 = module_0.first_unique_char(set_0)
+    assert var_1 == -1
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_2():
+    bytes_0 = b"&S\x7f\x1b\xc45\x9f\xb7\xe5\xb0("
+    dict_0 = {}
+    list_0 = [bytes_0, dict_0]
+    var_0 = module_0.first_unique_char(list_0)
+    assert var_0 == 0
+    var_1 = module_0.first_unique_char(bytes_0)
+    assert var_1 == 0
+    set_0 = {bytes_0, bytes_0, bytes_0}
+    var_2 = module_0.first_unique_char(set_0)
+    assert var_2 == 0
+    module_0.first_unique_char(var_2)
+
+
+@pytest.mark.xfail(strict=True)
+def test_case_3():
+    str_0 = "\nProblem\nGiven a value `value`, if we want to make change for `value` cents, and we have infinite\nsupply of each of coins = {S1, S2, .. , Sm} valued `coins`, how many ways can we make the change?\nThe order of `coins` doesn't matter.\nFor example, for `value` = 4 and `coins` = [1, 2, 3], there are four solutions:\n[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3].\nSo output should be 4.\n\nFor `value` = 10 and `coins` = [2, 5, 3, 6], there are five solutions:\n\n[2, 2, 2, 2, 2], [2, 2, 3, 3], [2, 2, 6], [2, 3, 5] and [5, 5].\nSo the output should be 5.\n\nTime complexity: O(n * m) where n is the `value` and m is the number of `coins`\nSpace complexity: O(n)\n"
+    var_0 = module_0.first_unique_char(str_0)
+    assert var_0 == 1
     none_type_0 = None
     module_0.first_unique_char(none_type_0)
 
 
-def test_case_3():
-    tuple_0 = ()
-    var_0 = module_0.first_unique_char(tuple_0)
-    assert var_0 == -1
-    var_1 = module_0.first_unique_char(tuple_0)
-    assert var_1 == -1
-    var_2 = module_0.first_unique_char(tuple_0)
-    assert var_2 == -1
-
-
 @pytest.mark.xfail(strict=True)
 def test_case_4():
-    str_0 = "Ms,EPX$O"
-    list_0 = [str_0, str_0, str_0, str_0]
+    none_type_0 = None
+    list_0 = [none_type_0, none_type_0, none_type_0]
     var_0 = module_0.first_unique_char(list_0)
     assert var_0 == -1
-    module_0.first_unique_char(var_0)
+    module_0.first_unique_char(none_type_0)
