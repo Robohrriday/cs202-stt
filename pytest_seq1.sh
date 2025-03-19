@@ -1,8 +1,8 @@
 start_time=$(date +%s)
 nruns=10
-for n in {1..nruns}
+for n in $(seq 1 $nruns)
 do
-    python3 -m pytest tests --cov=algorithms --cov-report=html:../cs202-stt/suiteD-results/
+    python3 -m pytest ./tests/ --cov=algorithms --cov-report=html:../../cs202-stt/suiteA/suiteA-results/
 done
 
 end_time=$(date +%s)
