@@ -13,10 +13,12 @@ Commit Analyzed: cad4754bc71742c2d6fcbd3b92ae74834d359844<br>
     - Coverage: *69%*
     - Total exec time: *95s (10 repetitons)*
     - Average exec time per test run: *9.5s*
-- suiteB - 3 sequential execs of tests repeated 5 times (without failing+flaky tests)
+- suiteB - 5 sequential execs of tests (without failing+flaky tests)
     - Run `pytest_seq2.sh`
     - Terminal log in `suiteB-log.txt`
-    - Coverage: *70%*
-    - Total exec time: *154s (5 repetitons of 3 sequential test runs)*
-    - Average execution time of five repetitions, `Tseq`: *30.80s*
-- suiteC - 
+    - Coverage: *69%*
+    - Total exec time: *49s* (5 repetitons)*
+    - Average execution time of five repetitions, `Tseq`: *9.8s*
+- suiteC - Parellel exec (same test suite as suiteB)
+    - Run `pytest_par.sh`
+    - Terminal log in `suiteC-log.txt`

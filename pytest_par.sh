@@ -1,5 +1,8 @@
 nruns=3
 underscore="_"
+csv_file="../../cs202-stt/suiteC/suiteC-results.csv"
+
+echo "n,threads,dist,run,time" > $csv_file
 
 for n in 1 auto
 do
@@ -15,7 +18,7 @@ do
                 start_time=$(date +%s)
                 python3 -m pytest tests \
                     --cov=algorithms \
-                    --cov-report=html:"../cs202-stt/suiteF-results/${n}${underscore}${threads}${underscore}${dist}" \
+                    --cov-report=html:"../../cs202-stt/suiteC/suiteC-results/${n}${underscore}${threads}${underscore}${dist}" \
                     -n $n --dist $dist --parallel-threads $threads
                 end_time=$(date +%s)
                 
@@ -23,6 +26,7 @@ do
                 total_time=$((total_time + run_time))
                 
                 echo "Run $i execution time: $run_time seconds"
+                echo "$n,$threads,$dist,$i,$run_time" >> $csv_file
             done
             
             average_time=$((total_time / nruns))

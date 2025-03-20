@@ -1,18 +1,11 @@
-nruns=3
-nreps=5
-s=0
-for rep in $(seq 1 $nreps)
+start_time=$(date +%s)
+nruns=5
+for n in $(seq 1 $nruns)
 do
-    start_time=$(date +%s)
-    for n in $(seq 1 $nruns)
-    do
-        python3 -m pytest tests --cov=algorithms --cov-report=html:../cs202-stt/suiteE-results/
-    done
-    end_time=$(date +%s)
-    execution_time=$((end_time - start_time))
-    s=$((s+execution_time))
-
-    echo "Total execution time: $execution_time seconds"
+    python3 -m pytest ./tests/ --cov=algorithms --cov-report=html:../../cs202-stt/suiteA/suiteA-results/
 done
-avg=$(echo "scale=2; $s / $nreps" | bc)
-echo "Average execution time: $avg seconds"
+
+end_time=$(date +%s)
+execution_time=$((end_time - start_time))
+
+echo "Total execution time: $execution_time seconds"
