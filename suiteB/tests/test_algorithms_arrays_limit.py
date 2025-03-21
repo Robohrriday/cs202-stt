@@ -6,47 +6,40 @@ import algorithms.arrays as module_0
 
 def test_case_0():
     set_0 = set()
-    var_0 = module_0.limit(set_0, set_0)
-    set_1 = set()
-    var_1 = module_0.limit(set_0, set_1)
-    var_2 = module_0.limit(var_1)
-    var_3 = module_0.limit(set_1)
-    var_4 = module_0.limit(var_1)
-    var_5 = module_0.limit(var_2, set_1, var_2)
-    var_6 = module_0.limit(var_1)
-    var_7 = module_0.limit(var_6)
-    var_8 = module_0.limit(var_2)
-    var_9 = module_0.limit(var_6, max_lim=var_6)
-    var_10 = module_0.limit(var_9, max_lim=var_4)
+    none_type_0 = None
+    var_0 = module_0.limit(set_0, max_lim=none_type_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_1():
-    int_0 = 524
-    list_0 = [int_0, int_0, int_0, int_0]
-    bytes_0 = b"\xb5\x94\xbb79kv\x16Qp"
+    dict_0 = {}
+    var_0 = module_0.limit(dict_0, dict_0, dict_0)
+    bytes_0 = b"\x05\xe8H\xa0k\xaa\xfci\x99.\x1de\x92P\x03\xa9\x85h\x04"
+    var_1 = module_0.limit(var_0, bytes_0)
+    var_2 = module_0.limit(bytes_0)
     none_type_0 = None
-    var_0 = module_0.limit(bytes_0, max_lim=none_type_0)
-    module_0.limit(list_0, max_lim=list_0)
+    var_3 = module_0.limit(bytes_0)
+    module_0.limit(none_type_0, none_type_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_2():
-    str_0 = "u*ZhK)\x0bX^<P3m"
-    var_0 = module_0.limit(str_0, str_0)
-    float_0 = 1804.2
-    module_0.limit(float_0, float_0)
+    str_0 = ": !{?X4DeOSw\x0ci"
+    var_0 = module_0.limit(str_0)
+    var_1 = module_0.limit(str_0)
+    str_1 = "93.E'nsM#K"
+    var_2 = module_0.limit(str_1)
+    none_type_0 = None
+    tuple_0 = (var_2,)
+    var_3 = module_0.limit(tuple_0, none_type_0)
+    var_4 = module_0.limit(str_1)
+    var_5 = module_0.limit(var_4, str_1, str_1)
+    var_6 = module_0.limit(var_2)
+    var_7 = module_0.limit(str_1, none_type_0)
+    module_0.limit(none_type_0, max_lim=none_type_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_3():
-    bool_0 = False
-    module_0.limit(bool_0, max_lim=bool_0)
-
-
-@pytest.mark.xfail(strict=True)
-def test_case_4():
-    str_0 = "^y93YM\x0b"
-    var_0 = module_0.limit(str_0, max_lim=str_0)
-    var_1 = module_0.limit(var_0)
-    module_0.limit(str_0, var_0, str_0)
+    int_0 = 1445
+    module_0.limit(int_0)

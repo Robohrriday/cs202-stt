@@ -4,49 +4,59 @@ import pytest
 import algorithms.strings as module_0
 
 
+@pytest.mark.xfail(strict=True)
 def test_case_0():
-    str_0 = "\\\\DzGX;EFpc{*0"
-    list_0 = [str_0]
-    var_0 = module_0.first_unique_char(list_0)
+    str_0 = "'_7V"
+    var_0 = module_0.first_unique_char(str_0)
     assert var_0 == 0
+    set_0 = {str_0, str_0, str_0}
+    var_1 = module_0.first_unique_char(set_0)
+    assert var_1 == 0
+    str_1 = "vg(d}`_kR@cr(/0"
+    var_2 = module_0.first_unique_char(str_1)
+    assert var_2 == 0
+    var_3 = module_0.first_unique_char(set_0)
+    assert var_3 == 0
+    bool_0 = False
+    module_0.first_unique_char(bool_0)
 
 
 def test_case_1():
-    set_0 = set()
-    var_0 = module_0.first_unique_char(set_0)
-    assert var_0 == -1
-    var_1 = module_0.first_unique_char(set_0)
-    assert var_1 == -1
+    str_0 = "\r#TZom\x0b%k>!fJd.*&!d"
+    var_0 = module_0.first_unique_char(str_0)
+    assert var_0 == 0
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_2():
-    bytes_0 = b"&S\x7f\x1b\xc45\x9f\xb7\xe5\xb0("
-    dict_0 = {}
-    list_0 = [bytes_0, dict_0]
-    var_0 = module_0.first_unique_char(list_0)
-    assert var_0 == 0
-    var_1 = module_0.first_unique_char(bytes_0)
-    assert var_1 == 0
-    set_0 = {bytes_0, bytes_0, bytes_0}
-    var_2 = module_0.first_unique_char(set_0)
-    assert var_2 == 0
-    module_0.first_unique_char(var_2)
+    complex_0 = 2682.509 - 336.6653j
+    module_0.first_unique_char(complex_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_3():
-    str_0 = "\nProblem\nGiven a value `value`, if we want to make change for `value` cents, and we have infinite\nsupply of each of coins = {S1, S2, .. , Sm} valued `coins`, how many ways can we make the change?\nThe order of `coins` doesn't matter.\nFor example, for `value` = 4 and `coins` = [1, 2, 3], there are four solutions:\n[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 3].\nSo output should be 4.\n\nFor `value` = 10 and `coins` = [2, 5, 3, 6], there are five solutions:\n\n[2, 2, 2, 2, 2], [2, 2, 3, 3], [2, 2, 6], [2, 3, 5] and [5, 5].\nSo the output should be 5.\n\nTime complexity: O(n * m) where n is the `value` and m is the number of `coins`\nSpace complexity: O(n)\n"
-    var_0 = module_0.first_unique_char(str_0)
-    assert var_0 == 1
-    none_type_0 = None
-    module_0.first_unique_char(none_type_0)
+    dict_0 = {}
+    var_0 = module_0.first_unique_char(dict_0)
+    assert var_0 == -1
+    var_1 = module_0.first_unique_char(dict_0)
+    assert var_1 == -1
+    object_0 = module_0.first_unique_char(dict_0)
+    assert object_0 == -1
+    module_0.first_unique_char(object_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_4():
-    none_type_0 = None
-    list_0 = [none_type_0, none_type_0, none_type_0]
+    bytes_0 = b"z\x84i0T\xcal\xdd%\xa5cY\xbe\x8dz\xf0\xf6\xc7"
+    var_0 = module_0.first_unique_char(bytes_0)
+    assert var_0 == 1
+    module_0.first_unique_char(var_0)
+
+
+@pytest.mark.xfail(strict=True)
+def test_case_5():
+    float_0 = -1449.300144
+    list_0 = [float_0, float_0, float_0]
     var_0 = module_0.first_unique_char(list_0)
     assert var_0 == -1
-    module_0.first_unique_char(none_type_0)
+    module_0.first_unique_char(var_0)

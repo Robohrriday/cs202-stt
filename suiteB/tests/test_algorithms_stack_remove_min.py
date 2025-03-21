@@ -6,42 +6,31 @@ import builtins as module_1
 
 
 def test_case_0():
-    bool_0 = False
-    list_0 = [bool_0, bool_0]
+    bytes_0 = b"\x94\xdck\x11"
+    list_0 = [bytes_0, bytes_0]
     var_0 = module_0.remove_min(list_0)
     var_1 = module_0.remove_min(list_0)
 
 
-@pytest.mark.xfail(strict=True)
 def test_case_1():
-    str_0 = " is not a prime number"
-    module_0.remove_min(str_0)
+    bytes_0 = b"\x94\xdck\x11"
+    list_0 = [bytes_0, bytes_0]
+    var_0 = module_0.remove_min(list_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_2():
-    int_0 = -502
-    module_0.remove_min(int_0)
-
-
-def test_case_3():
-    bool_0 = True
-    list_0 = [bool_0, bool_0]
-    var_0 = module_0.remove_min(list_0)
+    float_0 = -474.61617
+    module_0.remove_min(float_0)
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_4():
+def test_case_3():
     bool_0 = False
-    list_0 = [bool_0, bool_0, bool_0]
+    int_0 = 201
+    list_0 = [bool_0, bool_0, int_0, bool_0]
     var_0 = module_0.remove_min(list_0)
-    none_type_0 = None
-    object_0 = module_1.object()
-    str_0 = "H64O|e\tp%k"
-    list_1 = [var_0, str_0]
-    var_1 = module_0.remove_min(var_0)
-    var_2 = module_0.remove_min(var_1)
-    list_2 = [var_2, var_1, list_1, var_1]
-    var_3 = module_0.remove_min(list_2)
-    var_4 = module_0.remove_min(var_0)
-    module_0.remove_min(none_type_0)
+    list_1 = []
+    object_0 = module_1.object(*list_1)
+    var_1 = module_0.remove_min(list_1)
+    module_0.remove_min(object_0)

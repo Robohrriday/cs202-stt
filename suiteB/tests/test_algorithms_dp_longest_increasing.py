@@ -5,42 +5,42 @@ import algorithms.dp as module_0
 
 
 def test_case_0():
-    bytes_0 = b"?\x88"
-    var_0 = module_0.longest_increasing_subsequence(bytes_0)
-    assert var_0 == 2
-
-
-def test_case_1():
-    bytes_0 = b"g"
-    var_0 = module_0.longest_increasing_subsequence(bytes_0)
-    assert var_0 == 1
+    str_0 = "`l:~N<p4gh)EpRHN"
+    var_0 = module_0.longest_increasing_subsequence(str_0)
+    assert var_0 == 5
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_2():
-    bytes_0 = b"_0\xa5/\x98\xc0\x9a\xe3x$m4"
+def test_case_1():
+    bytes_0 = b"\x1f\x8c\xf7\x0c\x12;\x18\x8f"
     module_0.longest_increasing_subsequence_optimized(bytes_0)
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_3():
-    bytes_0 = b"g^"
+def test_case_2():
+    bytes_0 = b" \xa3"
     module_0.longest_increasing_subsequence_optimized2(bytes_0)
 
 
+def test_case_3():
+    list_0 = []
+    var_0 = module_0.longest_increasing_subsequence_optimized2(list_0)
+    assert var_0 == 0
+
+
 def test_case_4():
-    bytes_0 = b"g"
+    bytes_0 = b"\xa3"
     var_0 = module_0.longest_increasing_subsequence_optimized2(bytes_0)
     assert var_0 == 1
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_5():
-    bytes_0 = b"\x17\xb3T{\x82\x0bi\x17fg\xe4[\xcb"
-    module_0.longest_increasing_subsequence_optimized2(bytes_0)
+    str_0 = "`l:~N<pA4gh)EpRHN"
+    module_0.longest_increasing_subsequence_optimized2(str_0)
 
 
+@pytest.mark.xfail(strict=True)
 def test_case_6():
-    bytes_0 = b"\x17\xb3T{\x82\x0bi\x17fg\xe4[\xcb"
-    var_0 = module_0.longest_increasing_subsequence(bytes_0)
-    assert var_0 == 5
+    none_type_0 = None
+    module_0.longest_increasing_subsequence_optimized(none_type_0)

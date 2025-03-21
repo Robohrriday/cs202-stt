@@ -4,27 +4,41 @@ import pytest
 import algorithms.strings as module_0
 
 
-@pytest.mark.xfail(strict=True)
 def test_case_0():
-    str_0 = '"\nCreate a function that will validate if given parameters are valid geographical coordinates.\nValid coordinates look like the following: "23.32353342, -32.543534534". The return value should be either true or false.\nLatitude (which is first float) can be between 0 and 90, positive or negative. Longitude (which is second float) can be between 0 and 180, positive or negative.\nCoordinates can only contain digits, or one of the following symbols (including space after comma) -, .\nThere should be no space between the minus "-" sign and the digit after it.\n\nHere are some valid coordinates:\n-23, 25\n43.91343345, 143\n4, -3\n\nAnd some invalid ones:\n23.234, - 23.4234\nN23.43345, E32.6457\n6.325624, 43.34345.345\n0, 1,2\n\n'
+    str_0 = "q\"l HI'SgCp}Q\"'w=}L"
     var_0 = module_0.domain_name_1(str_0)
-    assert var_0 == '\nValid coordinates look like the following: "23'
+    assert var_0 == "q\"l HI'SgCp}Q\"'w=}L"
+    var_1 = module_0.domain_name_1(var_0)
+    var_2 = module_0.domain_name_2(var_1)
+    assert var_2 == "q\"l HI'SgCp}Q\"'w=}L"
+    var_3 = module_0.domain_name_2(var_1)
+    var_4 = module_0.domain_name_2(var_3)
+    var_5 = module_0.domain_name_1(var_4)
+
+
+@pytest.mark.xfail(strict=True)
+def test_case_1():
     none_type_0 = None
     module_0.domain_name_1(none_type_0)
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_1():
-    str_0 = "Stack is empty"
-    var_0 = module_0.domain_name_2(str_0)
-    assert var_0 == "Stack is empty"
-    var_1 = module_0.domain_name_1(var_0)
-    assert var_1 == "Stack is empty"
-    bytes_0 = b"8\xc9/="
-    module_0.domain_name_1(bytes_0)
+def test_case_2():
+    int_0 = -781
+    module_0.domain_name_2(int_0)
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_2():
-    float_0 = 3798.0
-    module_0.domain_name_2(float_0)
+def test_case_3():
+    str_0 = 'jC_>9Sf"Jena\tv|\x0c4h'
+    var_0 = module_0.domain_name_2(str_0)
+    assert var_0 == 'jC_>9Sf"Jena\tv|\x0c4h'
+    var_1 = module_0.domain_name_2(str_0)
+    var_2 = module_0.domain_name_1(var_1)
+    assert var_2 == 'jC_>9Sf"Jena\tv|\x0c4h'
+    bool_0 = False
+    str_1 = ".Jyb1:#0.V=Cw2\rl5"
+    var_3 = module_0.domain_name_1(str_1)
+    assert var_3 == "Jyb1:#0"
+    var_4 = module_0.domain_name_1(var_0)
+    module_0.domain_name_1(bool_0)

@@ -4,41 +4,53 @@ import pytest
 import algorithms.sort as module_0
 
 
+@pytest.mark.xfail(strict=True)
 def test_case_0():
-    float_0 = 3014.95669
-    list_0 = [float_0, float_0, float_0, float_0]
+    str_0 = "!i<  nqST-:eb iU@"
+    module_0.insertion_sort(str_0)
+
+
+def test_case_1():
+    bool_0 = True
+    list_0 = [bool_0, bool_0]
     var_0 = module_0.insertion_sort(list_0)
 
 
 @pytest.mark.xfail(strict=True)
-def test_case_1():
-    str_0 = "}A*%<*)i%],c[?\r36B"
-    int_0 = 1290
-    module_0.insertion_sort(str_0, int_0)
-
-
-@pytest.mark.xfail(strict=True)
 def test_case_2():
-    bool_0 = False
-    module_0.insertion_sort(bool_0)
+    int_0 = 556
+    module_0.insertion_sort(int_0, int_0)
 
 
-@pytest.mark.xfail(strict=True)
 def test_case_3():
-    bool_0 = False
-    dict_0 = {bool_0: bool_0, bool_0: bool_0, bool_0: bool_0, bool_0: bool_0}
-    var_0 = module_0.insertion_sort(dict_0)
-    none_type_0 = None
-    var_1 = module_0.insertion_sort(var_0)
-    var_2 = module_0.insertion_sort(var_1, var_1)
-    module_0.insertion_sort(none_type_0, none_type_0)
+    bool_0 = True
+    list_0 = [bool_0, bool_0]
+    var_0 = module_0.insertion_sort(list_0, bool_0)
 
 
 @pytest.mark.xfail(strict=True)
 def test_case_4():
-    int_0 = 507
     bool_0 = True
-    list_0 = [int_0, bool_0, int_0, bool_0]
-    var_0 = module_0.insertion_sort(list_0, bool_0)
+    list_0 = [bool_0, bool_0]
+    bool_1 = False
+    list_1 = [bool_0, bool_1, list_0]
+    module_0.insertion_sort(list_1)
+
+
+@pytest.mark.xfail(strict=True)
+def test_case_5():
+    bool_0 = True
+    list_0 = [bool_0, bool_0]
+    bool_1 = False
+    list_1 = [bool_1, bool_0, bool_1, list_0]
+    module_0.insertion_sort(list_1, list_1)
+
+
+@pytest.mark.xfail(strict=True)
+def test_case_6():
+    bool_0 = True
+    bool_1 = False
+    list_0 = [bool_0, bool_1, bool_0, bool_1, bool_1]
+    var_0 = module_0.insertion_sort(list_0)
     none_type_0 = None
-    module_0.insertion_sort(int_0, none_type_0)
+    module_0.insertion_sort(none_type_0)
