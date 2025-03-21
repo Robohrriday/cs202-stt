@@ -55,7 +55,7 @@ Commit Analyzed: cad4754bc71742c2d6fcbd3b92ae74834d359844<br>
 
 ### Average Time Per Configuration
 
-<!-- The table below shows the average time per configuration, calculated by averaging the times across all runs for each configuration: -->
+The table below shows the average time per configuration, calculated by averaging the times across all runs for each configuration:
 
 | n    | threads | dist | avg time (s) |
 |------|---------|------|--------------|
@@ -70,7 +70,7 @@ Commit Analyzed: cad4754bc71742c2d6fcbd3b92ae74834d359844<br>
 
 ### Speedup
 
-<!-- The table below shows the speedup of the parallel execution over the sequential execution (`Tseq = 9.8s`) for each configuration: -->
+The table below shows the speedup of the parallel execution over the sequential execution (`Tseq = 9.8s`) for each configuration:
 
 | n    | threads | dist | speedup |
 |------|---------|------|---------|
