@@ -22,3 +22,63 @@ Commit Analyzed: cad4754bc71742c2d6fcbd3b92ae74834d359844<br>
 - suiteC - Parellel exec (same test suite as suiteB)
     - Run `pytest_par.sh`
     - Terminal log in `suiteC-log.txt`
+
+### Raw Results:
+
+| n    | threads | dist | run | time (s) |
+|------|---------|------|-----|----------|
+| 1    | 1       | no   | 1   | 14       |
+| 1    | 1       | no   | 2   | 9        |
+| 1    | 1       | no   | 3   | 10       |
+| 1    | 1       | load | 1   | 11       |
+| 1    | 1       | load | 2   | 10       |
+| 1    | 1       | load | 3   | 10       |
+| 1    | auto    | no   | 1   | 424      |
+| 1    | auto    | no   | 2   | 430      |
+| 1    | auto    | no   | 3   | 426      |
+| 1    | auto    | load | 1   | 428      |
+| 1    | auto    | load | 2   | 428      |
+| 1    | auto    | load | 3   | 430      |
+| auto | 1       | no   | 1   | 8        |
+| auto | 1       | no   | 2   | 7        |
+| auto | 1       | no   | 3   | 6        |
+| auto | 1       | load | 1   | 8        |
+| auto | 1       | load | 2   | 7        |
+| auto | 1       | load | 3   | 7        |
+| auto | auto    | no   | 1   | 196      |
+| auto | auto    | no   | 2   | 196      |
+| auto | auto    | no   | 3   | 201      |
+| auto | auto    | load | 1   | 198      |
+| auto | auto    | load | 2   | 196      |
+| auto | auto    | load | 2   | 200      |
+
+
+### Average Time Per Configuration
+
+The table below shows the average time per configuration, calculated by averaging the times across all runs for each configuration:
+
+| n    | threads | dist | avg time (s) |
+|------|---------|------|--------------|
+| 1    | 1       | no   | 11.0         |
+| 1    | 1       | load | 10.3         |
+| 1    | auto    | no   | 426.7        |
+| 1    | auto    | load | 428.7        |
+| auto | 1       | no   | 7.0          |
+| auto | 1       | load | 7.3          |
+| auto | auto    | no   | 197.7        |
+| auto | auto    | load | 198.0        |
+
+### Speedup
+
+The table below shows the speedup of the parallel execution over the sequential execution (`Tseq = 9.8s`) for each configuration:
+
+| n    | threads | dist | speedup |
+|------|---------|------|---------|
+| 1    | 1       | no   | 0.89    |
+| 1    | 1       | load | 0.85    |
+| 1    | auto    | no   | 0.02    |
+| 1    | auto    | load | 0.02    |
+| auto | 1       | no   | 1.40    |
+| auto | 1       | load | 1.34    |
+| auto | auto    | no   | 0.05    |
+| auto | auto    | load | 0.05    |
