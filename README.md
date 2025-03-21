@@ -75,7 +75,7 @@ The table below shows the speedup of the parallel execution over the sequential 
 | n    | threads | dist | speedup |
 |------|---------|------|---------|
 | 1    | 1       | no   | 0.89    |
-| 1    | 1       | load | 0.85    |
+| 1    | 1       | load | 0.95    |
 | 1    | auto    | no   | 0.02    |
 | 1    | auto    | load | 0.02    |
 | auto | 1       | no   | 1.40    |
