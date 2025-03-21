@@ -97,10 +97,10 @@ The table below shows the speedup of the parallel execution over the sequential 
 | auto-auto-load| 198.0                       | 0.05               | 6       | 4             | 1           |
 
 Failing Tests Detected:
-- test_heap.py::TestBinaryHeap::test_insert
+- tests/test_heap.py::TestBinaryHeap::test_insert
 - tests/test_heap.py::TestBinaryHeap::test_remove_min
 - tests/test_linkedlist.py::TestSuite::test_is_palindrome
 - tests/test_compression.py::TestHuffmanCoding::test_huffman_coding
 
-Flaky Tets Detected:
+Flaky Tests Detected:
 - tests/test_compress.py::TestHuffmanCoding::test_huffman_coding
