@@ -55,7 +55,7 @@ Commit Analyzed: cad4754bc71742c2d6fcbd3b92ae74834d359844<br>
 
 ### Average Time Per Configuration
 
-The table below shows the average time per configuration, calculated by averaging the times across all runs for each configuration:
+<!-- The table below shows the average time per configuration, calculated by averaging the times across all runs for each configuration: -->
 
 | n    | threads | dist | avg time (s) |
 |------|---------|------|--------------|
@@ -70,7 +70,7 @@ The table below shows the average time per configuration, calculated by averagin
 
 ### Speedup
 
-The table below shows the speedup of the parallel execution over the sequential execution (`Tseq = 9.8s`) for each configuration:
+<!-- The table below shows the speedup of the parallel execution over the sequential execution (`Tseq = 9.8s`) for each configuration: -->
 
 | n    | threads | dist | speedup |
 |------|---------|------|---------|
@@ -82,3 +82,25 @@ The table below shows the speedup of the parallel execution over the sequential 
 | auto | 1       | load | 1.34    |
 | auto | auto    | no   | 0.05    |
 | auto | auto    | load | 0.05    |
+
+### Combined Results
+
+| configuration | average execution time (s)  | speedup (wrt seq)  | workers | failing tests | flaky tests |
+|---------------|-----------------------------|--------------------|---------|---------------|-------------|
+| 1-1-no        | 11.0                        | 0.89               | 1       | 0             | 0           |
+| 1-1-load      | 10.3                        | 0.95               | 1       | 0             | 0           |
+| 1-auto-no     | 426.7                       | 0.02               | 1       | 3             | 0           |
+| 1-auto-load   | 428.7                       | 0.02               | 1       | 3             | 0           |
+| auto-1-no     | 7.0                         | 1.40               | 6       | 0             | 0           |
+| auto-1-load   | 7.3                         | 1.34               | 6       | 0             | 0           |
+| auto-auto-no  | 197.7                       | 0.05               | 6       | 4             | 1           |
+| auto-auto-load| 198.0                       | 0.05               | 6       | 4             | 1           |
+
+Failing Tests Detected:
+- test_heap.py::TestBinaryHeap::test_insert
+- tests/test_heap.py::TestBinaryHeap::test_remove_min
+- tests/test_linkedlist.py::TestSuite::test_is_palindrome
+- tests/test_compression.py::TestHuffmanCoding::test_huffman_coding
+
+Flaky Tets Detected:
+- tests/test_compress.py::TestHuffmanCoding::test_huffman_coding
