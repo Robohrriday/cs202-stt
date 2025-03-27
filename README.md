@@ -2,8 +2,8 @@
 
 ### Lab 9: Module Dependency and Cohesion Analysis
 
-Repository Analyzed: [thebjorn/pydeps](https://github.com/thebjorn/pydeps.git)
-Commit Analyzed: 69b749cb71913b23301953554020e81f9b61a5ba
+Repository Analyzed: [google-deepmind/alphafold](https://github.com/google-deepmind/alphafold)
+Commit Analyzed: 020cd6d6cb16540114a084f9dbb8f21f811f9d21
 
 <!-- Command:
 ```
