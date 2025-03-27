@@ -1,0 +1,502 @@
+{
+    "alphafold": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.common",
+            "alphafold.data",
+            "alphafold.model",
+            "alphafold.relax",
+            "run_alphafold.py"
+        ],
+        "name": "alphafold",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/__init__.py"
+    },
+    "alphafold.common": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.common",
+            "alphafold.data",
+            "alphafold.model",
+            "alphafold.relax",
+            "run_alphafold.py"
+        ],
+        "imports": [
+            "alphafold",
+            "alphafold.common",
+            "alphafold.version",
+            "numpy",
+            "scipy",
+            "scipy.special"
+        ],
+        "name": "alphafold.common",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/common/__init__.py"
+    },
+    "alphafold.data": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.data",
+            "run_alphafold.py"
+        ],
+        "imports": [
+            "alphafold",
+            "alphafold.common",
+            "alphafold.data",
+            "numpy",
+            "pandas",
+            "scipy",
+            "scipy.linalg"
+        ],
+        "name": "alphafold.data",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/data/__init__.py"
+    },
+    "alphafold.model": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.model",
+            "alphafold.relax",
+            "run_alphafold.py"
+        ],
+        "imports": [
+            "alphafold",
+            "alphafold.common",
+            "alphafold.model",
+            "numpy"
+        ],
+        "name": "alphafold.model",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/model/__init__.py"
+    },
+    "alphafold.relax": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.relax",
+            "run_alphafold.py"
+        ],
+        "imports": [
+            "alphafold",
+            "alphafold.common",
+            "alphafold.model",
+            "alphafold.relax",
+            "numpy"
+        ],
+        "name": "alphafold.relax",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/relax/__init__.py"
+    },
+    "alphafold.version": {
+        "bacon": 2,
+        "imported_by": [
+            "alphafold.common"
+        ],
+        "name": "alphafold.version",
+        "path": "/home/quantumbits2/Documents/Python/cs202_stt/repos/alphafold/alphafold/version.py"
+    },
+    "numpy": {
+        "bacon": 1,
+        "imported_by": [
+            "alphafold.common",
+            "alphafold.data",
+            "alphafold.model",
+            "alphafold.relax",
+            "numpy",
+            "numpy.__config__",
+            "numpy._distributor_init",
+            "numpy._pytesttester",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.ctypeslib",
+            "numpy.dtypes",
+            "numpy.fft",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.matrixlib",
+            "numpy.polynomial",
+            "numpy.random",
+            "numpy.testing",
+            "run_alphafold.py",
+            "scipy",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.__config__",
+            "numpy._distributor_init",
+            "numpy._globals",
+            "numpy._pytesttester",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.ctypeslib",
+            "numpy.dtypes",
+            "numpy.exceptions",
+            "numpy.fft",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.matrixlib",
+            "numpy.polynomial",
+            "numpy.random",
+            "numpy.testing",
+            "numpy.version"
+        ],
+        "name": "numpy",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/__init__.py"
+    },
+    "numpy.__config__": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.core"
+        ],
+        "name": "numpy.__config__",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/__config__.py"
+    },
+    "numpy._distributor_init": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy"
+        ],
+        "imports": [
+            "numpy"
+        ],
+        "name": "numpy._distributor_init",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/_distributor_init.py"
+    },
+    "numpy._globals": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.core"
+        ],
+        "name": "numpy._globals",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/_globals.py"
+    },
+    "numpy._pytesttester": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.core",
+            "numpy.fft",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.matrixlib",
+            "numpy.polynomial",
+            "numpy.random",
+            "numpy.testing"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.testing"
+        ],
+        "name": "numpy._pytesttester",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/_pytesttester.py"
+    },
+    "numpy.compat": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.ma"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.compat"
+        ],
+        "name": "numpy.compat",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/compat/__init__.py"
+    },
+    "numpy.core": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.__config__",
+            "numpy.core",
+            "numpy.ctypeslib",
+            "numpy.fft",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.matrixlib",
+            "numpy.polynomial",
+            "numpy.testing"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._globals",
+            "numpy._pytesttester",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.exceptions",
+            "numpy.lib",
+            "numpy.version"
+        ],
+        "name": "numpy.core",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/core/__init__.py"
+    },
+    "numpy.ctypeslib": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.core"
+        ],
+        "name": "numpy.ctypeslib",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/ctypeslib.py"
+    },
+    "numpy.dtypes": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.dtypes"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.dtypes"
+        ],
+        "name": "numpy.dtypes",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/dtypes.py"
+    },
+    "numpy.exceptions": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.core"
+        ],
+        "name": "numpy.exceptions",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/exceptions.py"
+    },
+    "numpy.fft": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.fft"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.core",
+            "numpy.fft"
+        ],
+        "name": "numpy.fft",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/fft/__init__.py"
+    },
+    "numpy.lib": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.testing",
+            "scipy.linalg"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.ma",
+            "numpy.matrixlib"
+        ],
+        "name": "numpy.lib",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/lib/__init__.py"
+    },
+    "numpy.linalg": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.matrixlib",
+            "numpy.polynomial",
+            "numpy.testing",
+            "scipy.linalg"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.linalg"
+        ],
+        "name": "numpy.linalg",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/linalg/__init__.py"
+    },
+    "numpy.ma": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.lib",
+            "numpy.ma"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.compat",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.ma"
+        ],
+        "name": "numpy.ma",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/ma/__init__.py"
+    },
+    "numpy.matrixlib": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.lib",
+            "numpy.matrixlib"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.core",
+            "numpy.linalg",
+            "numpy.matrixlib"
+        ],
+        "name": "numpy.matrixlib",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/matrixlib/__init__.py"
+    },
+    "numpy.polynomial": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.polynomial"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.core",
+            "numpy.linalg",
+            "numpy.polynomial"
+        ],
+        "name": "numpy.polynomial",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/polynomial/__init__.py"
+    },
+    "numpy.random": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.random"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.random"
+        ],
+        "name": "numpy.random",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/random/__init__.py"
+    },
+    "numpy.testing": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.testing"
+        ],
+        "imports": [
+            "numpy",
+            "numpy._pytesttester",
+            "numpy.core",
+            "numpy.lib",
+            "numpy.linalg",
+            "numpy.testing"
+        ],
+        "name": "numpy.testing",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/testing/__init__.py"
+    },
+    "numpy.version": {
+        "bacon": 2,
+        "imported_by": [
+            "numpy",
+            "numpy.core"
+        ],
+        "name": "numpy.version",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/numpy/version.py"
+    },
+    "pandas": {
+        "bacon": 2,
+        "imported_by": [
+            "alphafold.data",
+            "pandas"
+        ],
+        "imports": [
+            "pandas"
+        ],
+        "name": "pandas",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/pandas/__init__.py"
+    },
+    "run_alphafold.py": {
+        "bacon": 0,
+        "imports": [
+            "alphafold",
+            "alphafold.common",
+            "alphafold.data",
+            "alphafold.model",
+            "alphafold.relax",
+            "numpy"
+        ],
+        "name": "run_alphafold.py",
+        "path": "run_alphafold.py"
+    },
+    "scipy": {
+        "bacon": 2,
+        "imported_by": [
+            "alphafold.common",
+            "alphafold.data",
+            "scipy",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "imports": [
+            "numpy",
+            "scipy"
+        ],
+        "name": "scipy",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/scipy/__init__.py"
+    },
+    "scipy.linalg": {
+        "bacon": 2,
+        "imported_by": [
+            "alphafold.data",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "imports": [
+            "numpy",
+            "numpy.lib",
+            "numpy.linalg",
+            "scipy",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "name": "scipy.linalg",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/scipy/linalg/__init__.py"
+    },
+    "scipy.special": {
+        "bacon": 2,
+        "imported_by": [
+            "alphafold.common",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "imports": [
+            "numpy",
+            "scipy",
+            "scipy.linalg",
+            "scipy.special"
+        ],
+        "name": "scipy.special",
+        "path": "/home/quantumbits2/Documents/Python/.venv/lib/python3.10/site-packages/scipy/special/__init__.py"
+    }
+}

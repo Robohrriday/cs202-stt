@@ -1,9 +1,11 @@
 # cs202-stt
 
-### Lab 7+8: Vulnerability Analysis on Open-Source Software Repositories
+### Lab 9: Module Dependency and Cohesion Analysis
 
-Repositories used: 
-- [microsoft/markitdown](https://github.com/microsoft/markitdown.git)
-- [XiaoMi/ha_xiaomi_home](https://github.com/XiaoMi/ha_xiaomi_home.git)
-- [google/latexify_py](https://github.com/google/latexify_py.git)
+Repository Analyzed: [thebjorn/pydeps](https://github.com/thebjorn/pydeps.git)
+Commit Analyzed: 69b749cb71913b23301953554020e81f9b61a5ba
 
+<!-- Command:
+```
+pydeps run_alphafold.py --show-deps -T png -o ./../../cs202-stt/deps/alphafold.png > ./../../cs202-stt/outputs/alphafold.json --max-module-depth=2
+``` -->
