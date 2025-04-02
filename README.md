@@ -2,10 +2,18 @@
 
 ### Lab 9: Module Dependency and Cohesion Analysis
 
-Repository Analyzed: [google-deepmind/alphafold](https://github.com/google-deepmind/alphafold)
-Commit Analyzed: 020cd6d6cb16540114a084f9dbb8f21f811f9d21
+Repositories Analyzed: 
+- [google-deepmind/alphafold](https://github.com/google-deepmind/alphafold)
+- [projectlombok/lombok](https://github.com/projectlombok/lombok.git)
 
-<!-- Command:
+<!-- Commands:
 ```
-pydeps run_alphafold.py --show-deps -T png -o ./../../cs202-stt/deps/alphafold.png > ./../../cs202-stt/outputs/alphafold.json --max-module-depth=2
-``` -->
+quantumbits2@quantumbits2:~/Documents/Python/cs202_stt/repos/alphafold$ pydeps run_alphafold.py --show-deps -T png -o ./../../cs202-stt/deps/alphafold.png > ./../../cs202-stt/outputs/alphafold.json --max-module-depth=2
+```
+
+```
+quantumbits2@quantumbits2:~/Documents/Python/cs202_stt$ java -jar LCOM.jar -i ./repos/lombok/src -o ./cs202-stt/outputs/LCOM
+```
+
+Resources:
+- [LCOM](https://medium.com/@suraif16/lack-of-cohesion-in-methods-265a9a26fd66) -->
