@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\D\\IITGN\\CS 202 STT\\lab12_console\\lab12_console.csproj",
+      "projectUniqueName": "F:\\D\\IITGN\\CS 202 STT\\cs202-stt\\lab12_console\\lab12_console.csproj",
       "projectName": "lab12_console",
-      "projectPath": "F:\\D\\IITGN\\CS 202 STT\\lab12_console\\lab12_console.csproj",
+      "projectPath": "F:\\D\\IITGN\\CS 202 STT\\cs202-stt\\lab12_console\\lab12_console.csproj",
       "packagesPath": "C:\\Users\\Hrriday\\.nuget\\packages\\",
-      "outputPath": "F:\\D\\IITGN\\CS 202 STT\\lab12_console\\obj\\",
+      "outputPath": "F:\\D\\IITGN\\CS 202 STT\\cs202-stt\\lab12_console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\installedSoftwares\\Visual Studio\\Shared\\NuGetPackages"
