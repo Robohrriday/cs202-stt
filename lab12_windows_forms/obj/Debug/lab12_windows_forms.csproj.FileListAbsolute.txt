@@ -1,0 +1,10 @@
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.csproj.AssemblyReference.cache
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.Properties.Resources.resources
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.csproj.GenerateResource.cache
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.csproj.CoreCompileInputs.cache
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\AlarmClockForm.Form1.resources
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\bin\Debug\lab12_windows_forms.exe.config
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\bin\Debug\lab12_windows_forms.exe
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\bin\Debug\lab12_windows_forms.pdb
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.exe
+F:\D\IITGN\CS 202 STT\lab12_windows_forms\obj\Debug\lab12_windows_forms.pdb
