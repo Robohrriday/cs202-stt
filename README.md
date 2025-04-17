@@ -1,3 +1,3 @@
 # cs202-stt
 
-### Lab 10: Development of C# Console Applications
+### Lab 12: Event-driven Programming for Windows Forms Apps. in C#
